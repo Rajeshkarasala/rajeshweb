@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Apply Leave</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    #apply-leave-form {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .required {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="apply-leave-form">
+    <h1>Apply Leave</h1>
+
+    <label for="leave-type">Leave Type <span class="required">*</span></label>
+    <select name="leave_type" id="leave-type" required>
+      <option value="casual">Casual</option>
+      <option value="sick">Sick</option>
+      <option value="vacation">Vacation</option>
+    </select>
+
+    <label for="from-date">From Date <span class="required">*</span></label>
+    <input type="date" name="from_date" id="from-date" required>
+
+    <label for="to-date">To Date <span class="required">*</span></label>
+    <input type="date" name="to_date" id="to-date" required>
+
+    <label for="reason">Reason <span class="required">*</span></label>
+    <textarea name="reason" id="reason" required></textarea>
+
+    <label for="approver-email">Approver Email <span class="required">*</span></label>
+    <input type="email" name="approver_email" id="approver-email" required>
+
+    <button type="submit">Submit</button>
+  </div>
+</body>
+</html>
