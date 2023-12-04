@@ -43,27 +43,33 @@
 <body>
   <div id="apply-leave-form">
     <h1>Apply Leave</h1>
-
+<div>
     <label for="leave-type">Leave Type <span class="required">*</span></label>
     <select name="leave_type" id="leave-type" required>
       <option value="casual">Casual</option>
       <option value="sick">Sick</option>
       <option value="vacation">Vacation</option>
     </select>
-
+</div>
+<div>
     <label for="from-date">From Date <span class="required">*</span></label>
     <input type="date" name="from_date" id="from-date" required>
-
+</div>
+  <div>
     <label for="to-date">To Date <span class="required">*</span></label>
     <input type="date" name="to_date" id="to-date" required>
-
+  </div>
+    <div>
     <label for="reason">Reason <span class="required">*</span></label>
     <textarea name="reason" id="reason" required></textarea>
-
+    </div>
+    <div>
     <label for="approver-email">Approver Email <span class="required">*</span></label>
     <input type="email" name="approver_email" id="approver-email" required>
-
+    </div>
+    <div>
     <button type="submit">Submit</button>
+    </div>
   </div>
 </body>
 </html>
