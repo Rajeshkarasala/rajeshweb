@@ -61,7 +61,7 @@ async function postData(url = '', auth, data = {}) {
       userId,
       message: "OverDueConv", // optional
       contextVariables: [
-        {"leave_type": "leave_type", "value": leave_type},
+        {"leave_typ": "leave_type", "value": leave_type},
         {"from_date": "from_date", "value": from_date},    
            {"to_date": "to_date", "value": to_date},
            {"reason": "reason", "value": reason},
